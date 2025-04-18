@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포지션_sticky속성을 활용한 레이아웃</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        header{
+            width: 100%; height: 100px;
+            background: #cccccc7a; position: fixed; z-index: 100;
+        }
+        main{background: rgb(181, 214, 146); padding-top: 100px; height: 5000px;}
+        article{width: 500px; height: 300px; background-color: rgb(163, 204, 163);
+                position: sticky; left: 300px; top: 100px;
+        }
+        footer{background: #333; color: #fff; line-height: 40px; text-align: center;}
+    </style>
+</head>
+<body>
+    <!-- 상단헤더 -->
+    <header>
+        <h1>position(요소의 배치방법)_sticky</h1>
+    </header>
+
+    <!-- 메인컨텐츠영역 -->
+    <main>
+        <p>position:sticky, '끈적 끈적한', '달라붙는' 이라는 뜻으로 세로 스크롤시 처음엔 고정으로 배치되어 있다가 부모의 높이나 컨텐츠가 상위로 올라왔을 때 컨텐츠가 동작하도록 하는 요소 배치방법</p>
+        <p>적용 예) 티켓몬스터 쇼핑몰 상품 상세페이지 참고</p>
+        <br><br><br><br><br><br><br><br><br>
+        <article>sticky속성이 적용된 박스(상세페이지)</article>
+    </main>
+
+    <!-- 하단푸터 -->
+    <footer>
+        <address>Copyright&copy;2025 0000 allrights reserved.</address>
+    </footer>
+</body>
+</html>
